@@ -1,0 +1,84 @@
+html,
+body,
+
+
+
+.mapcanvas {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position:relative;
+}
+
+.mapcanvas {
+	position:relative;
+	height:100%;
+	width:100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	border: solid black 4px;
+}
+
+.tips,
+.search-area {
+	font-size: 1.0em;
+}
+
+.search{
+	position: absolute;
+	max-height: 30%;
+	overflow: auto;
+	left: 1%;
+	top: 2%;
+	z-index: 2;
+	background-color: #eee;
+	opacity: 0.8;
+}
+
+.location-list {
+	padding: 0;
+	margin: 3px;
+	top:10px;
+}
+
+.search-input {
+	padding: 10px 50px;
+	font-size: 1.0em;
+	border: solid black 3px;
+	background-color: #abf;
+}
+
+.location-item {
+	padding: 10px;
+	margin: 3;
+	color:yellow;
+	background-color: #101;
+	list-style-type: none;
+	text-align: center;
+	border: solid yellow 2px;
+}
+
+.location-item:hover {
+	background-color: #111;
+	color: #fff;
+}
+
+@media (max-width:600px) {
+	.map-canvas {
+		margin-top: 52px;
+	}
+
+	.location-list {
+		margin: 0;
+	}
+
+	.search-area,
+	.search-input {
+		width: 100%;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+	}
+}
